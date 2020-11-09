@@ -1,0 +1,37 @@
+orange-red: #e05a47 rgb(224, 90, 71)
+
+light-grey-resume: #F8F8F8 
+
+
+
+Color/styling inspiration:
+
+-------------------------------------------
+
+Color: https://colorlib.com/wp/template/grunt/ 
+
+Spacing: https://www.ybrikman.com/projects/
+
+Font: https://hofmannsven.com/de
+
+
+
+GHS-inspired styling???
+
+-------------------------------------------
+
+http://jsfiddle.net/Aishaterr/vrpb2ey7/1 (via: https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css)
+(maybe width = ??)
+
+https://www.geeksforgeeks.org/how-to-set-the-gap-between-text-and-underlining-using-css/
+(maybe instead of fit-content, try max-content?
+
+Grainger fade underline/border
+https://stackoverflow.com/questions/4520943/fade-borders-in-css
+
+
+------------------------------------------
+
+https://css-tricks.com/fluid-width-video/
+
+https://css-tricks.com/styling-a-web-component/
