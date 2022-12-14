@@ -367,3 +367,42 @@ jQuery(document).ready(function($) {
 	stickyFillInit();
 
 });
+
+function getInput() {
+
+    // Obtain user input from HTML contact form
+    const $name = $('#name');
+    const $email = $('#email');
+    const $subject = $('#subject');
+    const $message = $('#msg');
+
+    // Google Form URL
+    const $formURL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLScUP8hSnb0-SKNnOLZlwhUlhx89k85n_FgXEVBdJdT2N2fNIA/formResponse';
+
+    // Tags for input from Google Form URL
+    const $googleName ='entry.2005620554'; 
+    const $googleEmail = 'entry.1160907507'; 
+    const $googleSubject = 'entry.1045781291'; 
+    const $googleMessage = 'entry.839337160'; 
+
+    // fill out Google Form and send 
+    fetch($formURL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `${$googleName}=${$name.val()}&${$googleEmail}=${$email.val()}&${$googleSubject}=${$subject.val()}&${$googleMessage}=${$message.val()}`
+    })
+    .then(res => {
+        $name.val('');
+        $email.val('');
+        $subject.val('');
+        $message.val('');
+    })
+    .catch(err => console.log(err));
+};
+
+
+// Contact Form button
+$('.submit').on('click', getInput);
