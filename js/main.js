@@ -405,4 +405,4 @@ function getInput() {
 
 
 // Contact Form button
-$('.submit').on('click', getInput);
+$('.send').on('click', getInput);

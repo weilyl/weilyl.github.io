@@ -12,16 +12,16 @@ class Header extends HTMLElement {
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link smoothscroll" href="#about-section">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Programming</a>
+              <a class="nav-link smoothscroll" href="#portfolio-section">Programming</a>
             </li>
+            <!--<li class="nav-item">
+              <a class="nav-link smoothscroll" href="#research-section">Research</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link smoothscroll" href="#contact-section">Contact</a>
             </li>
           </ul>
         </div>
